@@ -11,6 +11,12 @@ body {
   font-family: Ubuntu, sans-serif;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(230, 255, 246),
+    rgba(255, 0, 0, 0)
+  );
 }
 
 h1 {
@@ -18,46 +24,75 @@ h1 {
   color: rgb(255 255 255);
   font-weight: 400;
 }
+
+hr {
+  width: 98%;
+  border: 1px solid white;
+  margin-top: 35px;
+}
 .app {
   min-width: 550px;
   min-height: 600px;
   margin-top: 50px;
   border-radius: 5px;
-  background-image: linear-gradient(to top left, rgb(255 0 94), rgb(255 0 82));
-  box-shadow: 2px 20px 30px rgb(103 99 99);
+  background-color: rgb(255 0 82);
+  box-shadow: 2px 20px 20px rgb(103 99 99);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 input {
-  min-width: 300px;
-  height: 30px;
+  width: 410px;
+  background-color: rgb(238 238 238);
+  height: 45px;
   border: none;
   border-radius: 4px;
+  padding: 0 0 0 40px;
 }
 input:focus {
   outline: none;
-  border: 1px solid blue;
-  box-shadow: 2px 2px 5px rgb(189 142 142);
-  transform: scale(1.05, 1.05);
+  background-color: white;
+}
+
+.fa-clipboard-list {
+  position: relative;
+  left: 25px;
+  color: rgb(99, 98, 98);
+  font-size: large;
+}
+
+#add-button {
+  position: relative;
+  right: 30px;
+  color: rgb(50, 141, 38);
+  font-size: 22px;
 }
 
 .todos {
-  align-self: flex-start;
+  align-self: center;
   margin: 20px 30px;
 }
 
-.todo {
+.input-div {
   display: flex;
+  align-self: center;
   align-items: center;
+}
+.todo {
   width: 450px;
-  min-height: 30px;
-  border: 1px solid whitesmoke;
+  min-height: 50px;
   padding: 0 10px;
   font-size: 0.75rem;
   font-family: "Roboto", serif;
   font-weight: 400;
-  background-color: blanchedalmond;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: rgb(230, 255, 246);
+  color: black;
+}
+
+.todo:hover {
+  background-color: white;
   color: black;
 }
